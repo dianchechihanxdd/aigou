@@ -5,7 +5,7 @@ import java.util.List;
 //分页对象：easyui只需两个属性，total(总数),datas（分页数据）就能实现分页
 public class PageList<T> {
     private long total;
-    private List<T> rows = new ArrayList<>();
+    private List<T> rows = new ArrayList<T>();
 
     public long getTotal() {
         return total;

@@ -9,10 +9,10 @@ eureka:
 spring:
   application:
     name: spring-cloud-config-server
- cloud:
-     config:
-       server:
-         git:
-           uri: https://github.com/dianchechihanxdd/bili.git
-           username: dianchechihanxdd
-           password: Mlkg8023
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/solargen/aigou-config.git
+          username: solargen
+          password: itsource0814

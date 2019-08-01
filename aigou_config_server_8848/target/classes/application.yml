@@ -13,6 +13,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/wbls8411/aigou_conf.git
-          username: aidan20080709@126.com
-          password: wenbing888
+          uri: https://github.com/solargen/aigou-config.git
+          username: solargen
+          password: itsource0814
