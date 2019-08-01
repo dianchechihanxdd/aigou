@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="aigou_basic_util" />
+        <module name="aigou_config_server_8848" />
+        <module name="aigou_eureka_7001" />
+        <module name="aigou_plat_interface" />
+        <module name="aigou_plat_service" />
+        <module name="aigou_product_interface" />
+        <module name="aigou_product_service" />
+        <module name="aigou_zuul_9527" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aigou_basic_parent" target="1.5" />
+      <module name="aigou_basic_util" target="1.5" />
+      <module name="aigou_config_server_8848" target="1.5" />
+      <module name="aigou_eureka_7001" target="1.5" />
+      <module name="aigou_parent" target="1.5" />
+      <module name="aigou_plat_interface" target="1.5" />
+      <module name="aigou_plat_parent" target="1.5" />
+      <module name="aigou_plat_service" target="1.5" />
+      <module name="aigou_product_interface" target="1.5" />
+      <module name="aigou_product_parent" target="1.5" />
+      <module name="aigou_product_service" target="1.5" />
+      <module name="aigou_zuul_9527" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
