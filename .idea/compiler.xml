@@ -32,7 +32,7 @@
       <module name="aigou_plat_service" target="1.5" />
       <module name="aigou_product_interface" target="1.5" />
       <module name="aigou_product_parent" target="1.5" />
-      <module name="aigou_product_service" target="1.5" />
+      <module name="aigou_product_service" target="1.7" />
       <module name="aigou_zuul_9527" target="1.7" />
     </bytecodeTargetLevel>
   </component>

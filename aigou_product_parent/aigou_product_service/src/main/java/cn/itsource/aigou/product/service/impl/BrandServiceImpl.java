@@ -17,7 +17,7 @@ import java.util.List;
  * </p>
  *
  * @author wbtest
- * @since 2019-05-09
+ * @since 2019-08-01
  */
 @Service
 public class BrandServiceImpl extends ServiceImpl<BrandMapper, Brand> implements IBrandService {

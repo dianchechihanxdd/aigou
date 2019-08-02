@@ -20,7 +20,7 @@ import java.util.Map;
  * </p>
  *
  * @author wbtest
- * @since 2019-05-09
+ * @since 2019-08-01
  */
 @Service
 public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, ProductType> implements IProductTypeService {
