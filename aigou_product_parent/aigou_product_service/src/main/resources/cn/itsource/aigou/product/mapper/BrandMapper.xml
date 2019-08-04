@@ -45,30 +45,30 @@
     <!--long queryPageCount(BrandQuery brandQuery);-->
     <select id="queryPageCount" resultType="long" parameterType="BrandQuery">
         SELECT
-         count(*)
+        count(*)
         FROM
-         t_brand b
+        t_brand b
         LEFT JOIN t_product_type pt ON b.product_type_id = pt.id
         <include refid="whereSql"/>
     </select>
 
-   <!-- List<Brand> queryPageList(BrandQuery brandQuery);-->
+    <!-- List<Brand> queryPageList(BrandQuery brandQuery);-->
     <select id="queryPageList" resultMap="BrandMap" parameterType="BrandQuery">
-         SELECT
-          b.id,
-          b.createTime,
-          b.updateTime,
-          b.name,
-          b.englishName,
-          b.firstLetter,
-          b.description,
-          b.product_type_id,
-          b.sortIndex,
-          b.logo,
-          pt.id pid,
-          pt.name pname
+        SELECT
+        b.id,
+        b.createTime,
+        b.updateTime,
+        b.name,
+        b.englishName,
+        b.firstLetter,
+        b.description,
+        b.product_type_id,
+        b.sortIndex,
+        b.logo,
+        pt.id pid,
+        pt.name pname
         FROM
-            t_brand b
+        t_brand b
         LEFT JOIN t_product_type pt ON b.product_type_id = pt.id
         <include refid="whereSql"/>
         limit #{start},#{rows}
@@ -76,11 +76,11 @@
 
     <!--where b.name like '%D%' or b.englishName like '%D%'-->
     <sql id="whereSql">
-       <where>
-           <if test="keyword!=null and keyword!=''">
-               b.name like  CONCAT('%',#{keyword},'%') or b.englishName like CONCAT('%',#{keyword},'%')
-           </if>
-       </where>
+        <where>
+            <if test="keyword!=null and keyword!=''">
+                b.name like  CONCAT('%',#{keyword},'%') or b.englishName like CONCAT('%',#{keyword},'%')
+            </if>
+        </where>
     </sql>
 
 </mapper>
