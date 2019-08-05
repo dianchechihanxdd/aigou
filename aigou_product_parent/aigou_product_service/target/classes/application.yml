@@ -1,0 +1,18 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: AIGOU-PRODUCT
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///aigou-product
+    username: root
+    password: 123456
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+mybatis-plus:
+  type-aliases-package: cn.itsource.aigou.product.domain,cn.itsource.aigou.product.query
+
+

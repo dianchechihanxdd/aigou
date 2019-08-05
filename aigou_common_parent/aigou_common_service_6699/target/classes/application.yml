@@ -1,0 +1,12 @@
+server:
+  port: 6699
+  max-http-header-size: 4048576
+spring:
+  application:
+    name: COMMON-PROVIDER
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
+
